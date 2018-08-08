@@ -30,12 +30,15 @@ module.exports = class OfflineDB {
   }
 
   remove() {
-    let dbPath;
-
-    for (let i = 0; i < this._parsed.length; i++) {
-      dbPath = this._db[this._parsed[i]];
+    let dbPath = this._db;
+    if (this._parsed.length === 1) {
+      delete this._db[this._parsed[0]];
+    } else {
+      for (let i = 0; i < this._parsed.length - 1; i++) {
+        dbPath = dbPath[this._parsed[i]];
+      }
+      delete dbPath[this._parsed[this._parsed.length - 1]];
     }
-    console.log(dbPath);
   }
 
   once() {

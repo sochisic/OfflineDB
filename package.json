@@ -1,0 +1,30 @@
+{
+  "name": "Technical-Challenge-OfflineDB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node index"
+  },
+  "jest": {
+    "notify": false,
+    "browser": false,
+    "automock": false,
+    "resetMocks": true,
+    "clearMocks": true,
+    "resetModules": true,
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://st_dagaev@bitbucket.org/st_dagaev/offlinedb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/st_dagaev/offlinedb#readme",
+  "devDependencies": {
+    "jest": "^23.4.2"
+  }
+}
