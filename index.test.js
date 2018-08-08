@@ -11,7 +11,6 @@ let db = new OfflineDB({
 
 describe("OfflineDB", () => {
   test("OfflineDB ref", () => {
-    let db = new OfflineDB();
     expect(db).toHaveProperty("ref");
   });
   test("OfflineDB push", () => {
